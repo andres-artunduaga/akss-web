@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:ghp": "ng build --prod --base-href='https://andres-artunduaga.github.io/akss-web/'",
+    "deploy": "yarn build:ghp && npx ngh --dir=dist/akss"
   },
   "private": true,
   "dependencies": {
